@@ -2,7 +2,7 @@
 #include "math.h"
 
 int sumDigits(int n) {
-    int sum ;
+    int sum;
     
     for (sum = 0;n;sum += n%10, n /= 10);
 
