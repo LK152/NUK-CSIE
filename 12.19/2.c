@@ -27,6 +27,8 @@ int binarySearch(int* arr, int size, int num, int startIdx, int endIdx) {
     if (num > arr[mid]) return binarySearch(arr, size, num, mid+1, endIdx);
     
     if (num < arr[mid]) return binarySearch(arr, size, num, startIdx, mid-1);
+
+    return 0;
 }
 
 void isFound(int* arr, int size, int num) {
