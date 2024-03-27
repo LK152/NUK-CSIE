@@ -21,9 +21,7 @@ int main() {
     for (i = 0;i<n;i++) {
         scanf("%d %d", &(items + i)->value, &(items + i)->weight);
     }
-    for (i = 0;i<=w;i++) {
-        dp[i] = 0;
-    }
+    for (i = 0;i<=w;i++) dp[i] = 0;
     for (i = 0;i<n;i++) {
         for (j = w;j>=(items + i)->weight;j--) {
             dp[j] = max(dp[j], dp[j-(items + i)->weight] + (items + i)->value);
