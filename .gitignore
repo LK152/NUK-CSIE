@@ -1,0 +1,11 @@
+*
+!*/
+!*.c
+!*.cpp
+!*.sh
+!*.zip
+!*.txt
+!*.jpg
+!*.png
+!*.heic
+!.gitignore
