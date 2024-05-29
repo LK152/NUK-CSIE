@@ -210,7 +210,7 @@ int main() {
             case 5:
                 printf("請輸入要刪除的位置:\n");
                 scanf("%d", &p);
-                if (p > getLen(linkedList) || p < getLen(linkedList)) {
+                if (p > getLen(linkedList) || p < 0) {
                     printError();
                     break;
                 }
