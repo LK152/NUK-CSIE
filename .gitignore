@@ -8,4 +8,9 @@
 !*.jpg
 !*.png
 !*.heic
+!*.h
+!*.html
+!*.htm
+!*.css
+!*.js
 !.gitignore
