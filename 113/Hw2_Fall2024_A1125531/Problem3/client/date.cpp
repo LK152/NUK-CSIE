@@ -6,15 +6,15 @@ using namespace std;
 Date::Date(int month, int day, int year) : month(month), day(day), year(year) {};
 
 void Date::setMonth(int month) {
-    month = (month >= 1 && month <= 12) ? month : 1;
+    this->month = (month >= 1 && month <= 12) ? month : 1;
 }
 
 void Date::setDay(int day) {
-    day = day;
+    this->day = day;
 }
 
 void Date::setYear(int year) {
-    year = year;
+    this->year = year;
 }
 
 int Date::getMonth() const {
