@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>9-26</title>
+        <style>
+            .headerWrapper {
+                background-color: pink;
+                padding: 0;
+                text-align: center;
+                height: 110px;
+            }
+
+            body {
+                overflow: hidden;
+                margin: auto;
+                width: 800px;
+                font-size: 10pt;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 30pt;
+            }
+
+            h2 {
+                font-size: 14pt;
+            }
+
+            section {
+                min-height: 500px;
+            }
+
+            hr {
+                margin: 0;
+                border: 2px dotted;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                margin: auto
+            }
+
+            .navbar li {
+                color: gray;
+                padding: 20px;
+                font-size: large;
+            }
+
+            footer {
+                background-color: pink;
+                min-height: 50px;
+                font-size: 20pt;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="headerWrapper">
+            <h1>
+                INSTRUCTION IMFORMATION SYSTEM
+            </h1>
+            <nav>
+                <ul class="navbar">
+                    <li>Curriculum Vitae</li>
+                    <li>Publication</li>
+                    <li>Course</li>
+                    <li>System Demo</li>
+                </ul>
+            </nav>
+        </div>
+        <div style="display: flex;">
+            <hr />
+            <section style="display: flex; flex-direction: column; width: 70%; margin: 2%;">
+                <article>
+                    <h2>
+                        歡迎光臨史瑞克之深度學習
+                    </h2>
+                    <p>深度學習（英語：deep learning）是機器學習的分支，是一種以人工神經網路為架構，<br />對資料進行表徵學習的演算法。</p>
+                </article>
+                <hr />
+                <article>
+                    <h2>深度學習種類</h2>
+                    <p>基本</p>
+                    <ul>
+                        <li>Convolution Neural Networks: CNN</li>
+                        <li>Recurrent Neural Network: RNN</li>
+                        <li>Yolo</li>
+                        <li>UNet</li>
+                        <li>Generative Adversarial Nets: GAN</li>
+                        <li>Graph Neural Network: GNN</li>
+                    </ul>
+                    <p>進階</p>
+                    <ul>
+                        <li>LSTM (Long Short-Term Memory)</li>
+                        <li>Auto encoder, Attention mechanism, Transformer</li>
+                        <li>Transfer learning</li>
+                        <li>Meta learning</li>
+                        <li>Few-Shot Learning</li>
+                        <li>Federated learning</li>
+                        <li>Metric Learning</li>
+                    </ul>
+                </article>
+                <a href="">我的課程</a>
+                <hr />
+            </section>
+            <hr />
+            <aside style="width: 200px; margin: 4%;">
+                <h2>
+                    <b>相關資源網站</b>
+                </h2>
+                <ul>
+                    <li><a href="">Wikipedia</a></li>
+                    <li><a href="">Keras</a></li>
+                    <li><a href="">PyTorch</a></li>
+                </ul>
+                <a href="">更多資源</a>
+            </aside>
+            <hr />
+        </div>
+        <footer>
+            <h2 style="color: blue;">這是一個CSS版面參考範例</h2>
+        </footer>
+    </body>
+</html>
