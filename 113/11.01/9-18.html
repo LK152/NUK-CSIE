@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>9-18</title>
+		<style>
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			.menu {
+				font-family: '微軟正黑體';
+				font-size: 20px;
+			}
+			.menu > li {
+				float: left;
+			}
+			.menu li {
+				position: relative;
+				padding: 0px;
+				border: lightblue 1px dashed;
+				min-width: 150px;
+			}
+			.menu ul {
+				position: absolute;
+				top: 100%;
+				display: none;
+			}
+			.menu a {
+				display: block;
+				padding: 5px 20px;
+				text-decoration: none;
+				color: black;
+			}
+
+			.menu a:hover {
+				color: red;
+			}
+
+			.menu li:hover > ul {
+				display: block;
+			}
+            
+			.menu ul ul {
+				top: 0;
+				left: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+			<li>
+				<a href="#">台北景點</a>
+				<ul>
+					<li><a href="#">台北101</a></li>
+					<li><a href="#">迪化街</a></li>
+					<li><a href="#">士林夜市</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">澎湖景點</a>
+				<ul>
+					<li><a href="#">跨海大橋</a></li>
+					<li><a href="#">沙灘</a></li>
+					<li><a href="#">觀音亭</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">台南景點</a>
+				<ul>
+					<li><a href="#">赤崁樓</a></li>
+					<li><a href="#">台南孔廟</a></li>
+					<li>
+						<a href="#">台南小吃>></a>
+						<ul>
+							<li><a href="#">八寶冰</a></li>
+							<li><a href="#">蚵仔煎</a></li>
+							<li><a href="#">米糕</a></li>
+							<li><a href="#">牛肉湯</a></li>
+							<li><a href="#">肉燥飯</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

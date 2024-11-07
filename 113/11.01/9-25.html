@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>9-25</title>
+		<style>
+			* {
+				margin: 0;
+			}
+			header {
+				height: 100px;
+				background-color: pink;
+				position: relative;
+			}
+
+			#menu {
+				background-color: blue;
+			}
+
+			#menu ul {
+				padding: 0;
+				display: table;
+				border-spacing: 5px;
+				width: 100%;
+			}
+
+			#menu li {
+				display: table-cell;
+				background-color: white;
+				font-size: 24px;
+				border: 1px blue dashed;
+			}
+
+			#menu li a {
+				display: block;
+				text-align: center;
+				text-decoration: none;
+			}
+
+			#menu li a:hover {
+				color: white;
+				background-color: pink;
+			}
+
+			main {
+				float: right;
+				width: 80%;
+				height: 300px;
+				background-color: aquamarine;
+			}
+
+			aside {
+				float: left;
+				width: 20%;
+				height: 300px;
+				background-color: yellow;
+			}
+
+			footer {
+				clear: both;
+				height: 50px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>這裡是Header</h1>
+		</header>
+		<div id="menu">
+			<ul>
+				<li><a herf="">台北導覽</a></li>
+				<li><a herf="">台中導覽</a></li>
+				<li><a herf="">台南導覽</a></li>
+				<li><a herf="">高雄導覽</a></li>
+			</ul>
+			<main>
+				<h1>這裡是main</h1>
+				<section>
+					<h2>這裡是section</h2>
+					<article>
+						<h3>這裡是article1</h3>
+					</article>
+
+					<article>
+						<h3>這裡是article2</h3>
+					</article>
+				</section>
+			</main>
+			<aside>這裡是aside</aside>
+
+			<footer>這裡是footer</footer>
+		</div>
+	</body>
+</html>
