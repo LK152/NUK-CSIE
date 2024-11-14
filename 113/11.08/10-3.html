@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+</head>
+<meta charset="utf-8">
+
+<script type="text/Javascript">
+    function show(id){
+        document.getElementById(id).style.display="block";
+    }
+    
+    function nonshow(id){
+        document.getElementById(id).style.display="none";
+    }
+    
+    function message(){
+        alert("Hi, \n歡迎光臨");
+        
+    }
+    function winopen() {
+        var reply=confirm('Are you sure?');
+        //alert (reply);
+    if (reply==true)
+    window.open("https://tw.yahoo.com/","winopen", "width=300 height=200");
+    else
+        alert('OK,OK,下次再去吧～');
+    }
+
+function start() {
+    alert('歡迎光臨');
+    var name=prompt('What is your name?.','You name here');
+    alert('Hi,'+name+'歡迎光臨');
+}
+
+function check(){
+    if(document.getElementById("data").value=="")
+    {
+        alert("學號不得為空值");
+        document.getElementById("data").focus();
+    }
+}
+
+function hover(){
+    document.getElementById("demo").style.backgroundColor="lightblue";
+    document.getElementById("demo").style.color="blue";
+}
+
+function hout(){
+    document.getElementById("demo").style.backgroundColor="white";
+    document.getElementById("demo").style.color="black";
+}
+
+function mySelect(){
+    var sd=document.getElementById('sel');
+    sd.style.display='inline';
+}
+
+</script>
+<script src="10-3.js"></script>
+<script src="10-3-2.js"></script>
+
+<style>
+    dialog{
+        border:none;
+        box-shadow: 2px 6px #ccc;
+        border-radius: 10px;
+    }
+
+    .pop{
+        position:absolute;
+        display:none;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background:rgba(0,0,0,0.1)
+    }
+
+    .msg{
+        position:absolute;
+        display:none;
+        top:15px;
+        right:20px;
+        bottom:15px;
+        left:20px;
+        background:white;
+    }
+
+    .msg{
+        position: absolute;
+        width:50%;
+        height:50%;
+        top:25%;
+        left:25%;
+        text-align: center;
+        background:white;
+    }
+
+    .CloseIcon{cursor:default;}
+
+</style>
+
+<body onload=start()>
+    <img src="01.jpg" width="100" height="100" border="0" style="display:none" id="img1" >
+    <br><span style="background-color: yellow"><font-blue>資工系基本資料</font-blue></span></br>
+    <hr>
+
+    <table border="2" width="80%">
+        <tr>
+            <th rowspan="2">學生/姓名</th>
+            <th colspan="4">基本資料</th>
+            <th colspan="4">成績</tr>
+            <th>生日：</th>
+            <th>興趣：</th>
+            <th>科系：</th>
+            <th>專長：</th>
+            <th>計概：</th>
+            <th>程式設計：</th>
+            <th>企業概論：</th>
+            <th>網路概論：</tr>
+            <td>羅寶承</td>
+            <td>2004/09/14</td>
+            <td>打球</td>
+            <td>資工系</td>
+            <td>睡覺</td>
+            <td>40</td>
+            <td>50</td>
+            <td>60</td>
+            <td>70</td>
+        </tr>
+    </table>
+</hr>
+    <p style="clear:both"><a href="http://tw.yahoo.com/">到yahoo逛逛</a></p>
+    <p><a href="http://www.google.com/">到google逛逛</a></p>
+    <p><input type="button" value="顯示個人資料" onclick="show ('img1')"></p>
+    <p><input type="button" value="隱藏個人資料" onclick="nonshow ('img1')"></p>
+    <p><input type="button" value="按我" onclick=message()></p>
+    <p><input type="button" value="到yahoo走走" onclick=winopen()></p>
+
+    <p><input type="button" onclick="document.bgColor='red'" value="紅色背景"></p>
+    <p><input type="button" onclick="document.bgColor='yellow'" value=" 黃色背景"></p>
+    <p><input type="button" onclick="document.bgColor='green'" value="綠色背景"></p>
+
+    <p><button onclick=msg()>POPUP Window01</button></p>
+    <dialog id="info">
+        <p>這是彈出視窗！!</p>
+        <button id="close">close</button>
+    </dialog>
+
+        <div class="pop" id="pop">
+            <div class="msg">
+                <div onclick="CloseWin()" class="CloseIcon">&#10006;</div>
+                <h3>這是彈出視窗！!</h3>
+            </div>
+        </div>
+        <p><button onclick="OpenWin()">POPUP Window02</button></p>
+
+        <p><hr>
+        
+        <p>
+            學號：<input type=text name=sid id="data">
+        
+        <p> 性別：
+            <select name="sex" onchange="mySelect()">
+            <option selected>請選擇</option>
+            <option>男</option>
+            <option>女</option>
+            </select>
+
+        <p>血型
+            <select id="sel" name="bloodtype" style="display:none;">
+            <option selected>A</option>
+            <option>B</option>
+            <option>O</option>
+            <option>AB</option>
+            </select>
+
+        <div onmousemove="hover()" onmouseout="hout()">
+            <h3><p id="demo">Try Me!Onmouseover & Onmouseout!</p></h2></p></h3>
+        </div>
+
+        <p><input type=button value="送出" onClick=check()></p>
+
+</body>
+</html>
