@@ -15,4 +15,5 @@
 !*.htm
 !*.css
 !*.js
+!*.php
 !.gitignore

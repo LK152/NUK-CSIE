@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+
+    <body>
+        <button id="hider">一般隱藏</button>
+        <button id="shower">一般顯示</button>
+        <h1>Hello, jQuery!</h1>
+        <script>
+        $("#hider").on("click", function() {
+            $("h1").hide(100);
+        });
+        $("#shower").on("click", function() {
+            $("h1").show(900);
+        });
+        </script>
+<hr>
+        <button id="hider1">淡出淡入隱藏</button>
+        <button id="shower1">淡出淡入顯示</button>
+        <h2>Hello, jQuery!</h2>
+        <script>
+        $("#hider1").on("click", function() {
+            $("h2").hide(100);
+        });
+        $("#shower1").on("click", function() {
+            $("h2").show(900);
+        });
+        </script>
+<hr>
+        <button id="hider2">透明</button>
+        <button id="shower2">正常</button>
+        <h3>Hello, jQuery!</h3>
+        <script>
+        $("#hider2").on("click", function() {
+            $("h3").hide(100);
+        });
+        $("#shower2").on("click", function() {
+            $("h3").show(900);
+        });
+        </script>
+        <script>
+            $("#book").on("change",function(){
+                $("#content").text($("#book option:selected").text());
+                $("#value").text($("#book option:selected").val());
+            });
+        </script>
+    </body>
+</html>
