@@ -1,4 +1,5 @@
 #include "CheckingAccount.h"
+
 #include "iostream"
 
 using namespace std;
@@ -9,18 +10,15 @@ CheckingAccount::CheckingAccount(double initBalance, double fee)
 }
 
 int CheckingAccount::credit(double amount) {
-    if (credit(amount))
-        debit(feePerTransac);
+    if (Account::credit(amount)) Account::debit(feePerTransac);
 
     return 1;
 }
 
 int CheckingAccount::debit(double amount) {
-    if (debit(amount)) {
-        debit(feePerTransac);
+    if (Account::debit(amount)) {
+        Account::debit(feePerTransac);
         return 1;
-    } else {
-        cout << "Debit amount exceeded account balance.\n";
+    } else
         return 0;
-    }
 }

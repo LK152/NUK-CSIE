@@ -3,7 +3,7 @@
 
 class Account {
     public: 
-        explicit Account(double);
+        explicit Account(double = 0.0);
         int credit(double);
         int debit(double);
         double getBalance() const;

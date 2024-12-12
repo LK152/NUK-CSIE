@@ -9,9 +9,7 @@ int main() {
 
     OvernightPackage op("c", "address", "kh", "tw", "811", 25, 0.4, 0.6);
 
-    cout << "\n"
-         << tdp.calculateCost() << "\n"
-         << op.calculateCost() << "\n";
+    cout << tdp.calculateCost() << "\n" << op.calculateCost() << "\n";
 
     return 0;
 }
