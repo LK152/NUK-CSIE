@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>table</title>
+        <style>
+            body {
+                overflow: hidden;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .tableWrapper {
+                height: 100vh;
+                background-image: url('./bg.jpg');
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            th {
+                padding: 6px;
+            }
+
+            td {
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='tableWrapper'>
+            <p>北海道相簿--相片分類</p>
+            <table border="2">
+                <th colspan="5" style="text-align: center">
+                    美瑛--四季彩之丘
+                </th>
+                <tbody>
+                    <tr>
+                        <td>季節</td>
+                        <td>春季</td>
+                        <td>夏季</td>
+                        <td>秋季</td>
+                        <td>冬季</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">日拍</td>
+                        <td>牧草人1</td>
+                        <td>向日葵1</td>
+                        <td>花菱草1</td>
+                        <td>大波斯菊1</td>
+                    </tr>
+                    <tr>
+                        <td>牧草人1</td>
+                        <td>薰衣草1</td>
+                        <td>鬱金香1</td>
+                        <td>山茶花1</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">夜拍</td>
+                        <td>金魚草1</td>
+                        <td>向日葵2</td>
+                        <td>花菱草2</td>
+                        <td>大波斯菊2</td>
+                    </tr>
+                    <tr>
+                        <td>金魚草2</td>
+                        <td>薰衣草2</td>
+                        <td>鬱金香2</td>
+                        <td>山茶花2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
