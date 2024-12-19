@@ -1,0 +1,24 @@
+<html>
+    <body style="background-color: black;">
+    <php
+        $location = "localhost";
+        $account = "root";
+        $password = "root";
+
+        if(isset($location) && isset($account) && isset($password))
+        {
+            $link = @mysqli_connect($location, $account, $password);
+            if($link)
+            {
+            echo "連接成功";
+            }
+            else
+            {
+            echo "連接失敗: " . mysqli_connect_error();
+            }
+        }
+    ?>
+
+
+    </body>
+</html>
