@@ -5,7 +5,7 @@ using namespace std;
 
 double divide(double numer, double denom) {
     if (denom == 0) {
-        throw invalid_argument("°£¼Æ¤£¯à¬°¹s");
+        throw invalid_argument("é™¤æ•¸ä¸èƒ½ç‚ºé›¶");
     }
     return numer / denom;
 }
@@ -16,17 +16,17 @@ int main() {
 
     while (retry) {
         try {
-            cout << "½Ğ¿é¤J³Q°£¼Æ: ";
+            cout << "è«‹è¼¸å…¥è¢«é™¤æ•¸: ";
             cin >> numer;
-            cout << "½Ğ¿é¤J°£¼Æ: ";
+            cout << "è«‹è¼¸å…¥é™¤æ•¸: ";
             cin >> denom;
 
             double result = divide(numer, denom);
-            cout << "µ²ªG: " << result << std::endl;
+            cout << "çµæœ: " << result << std::endl;
             retry = false; 
         } catch (const invalid_argument& e) {
-            cerr << "¿ù»~: " << e.what() << endl;
-            cout << "½Ğ­«·s¹Á¸Õ¿é¤J¦³®Äªº¼Æ¦r¡C" << endl;
+            cerr << "éŒ¯èª¤: " << e.what() << endl;
+            cout << "è«‹é‡æ–°å˜—è©¦è¼¸å…¥æœ‰æ•ˆçš„æ•¸å­—ã€‚" << endl;
         }
     }
 
