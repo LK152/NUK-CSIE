@@ -4,6 +4,7 @@
 !*/
 !*.c
 !*.cpp
+!*.java
 !*.sh
 !*.zip
 !*.txt
