@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Fraction {
     private int numerator, denominator;
     public void set_numerator(int n) {
