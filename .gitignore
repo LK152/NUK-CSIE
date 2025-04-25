@@ -18,3 +18,5 @@
 !*.js
 !*.php
 !.gitignore
+!*.in
+!*.out
