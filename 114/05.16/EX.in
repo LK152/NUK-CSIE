@@ -1,0 +1,38 @@
+PushFrontAlbum A
+PushBackAlbum B
+InsertAlbum C 2
+PrintAlbums
+PushFrontTrack Nico 20 A
+PushFrontTrack Hello 30 A
+PrintTracks A
+PushBackTrack Flower 23 A
+PushBackTrack OAOA 18 B
+PushFrontTrack PPAP 25 B
+InsertTrack World 15 C 1
+InsertTrack City 24 B 1
+InsertTrack Future 14 C 2
+InsertTrack Light 50 A 3
+RemoveAtTrack A 2
+PrintTracks A
+RemoveLastTrack A
+PrintTracks A
+PopTrack A
+Play
+Next
+Play
+ReverseAlbums
+Play
+PushBackTrack Sky 13 B
+ReverseTracks B
+Play
+PushBackAlbum D
+PushBackAlbum E
+PushBackAlbum F
+PrintAlbums
+RemoveLastAlbum
+ReverseAlbums
+PrintAlbums
+RemoveAlbumAt 2
+PopAlbum
+PrintAlbums
+END

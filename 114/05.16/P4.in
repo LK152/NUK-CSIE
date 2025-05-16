@@ -1,0 +1,69 @@
+PushBackAlbum A  
+PushBackAlbum B  
+PushBackAlbum C  
+PushFrontAlbum D  
+InsertAlbum E 3  
+PrintAlbums  
+InsertTrack Ta3 30 A 1 
+PushFrontTrack Ta1 10 A  
+PushBackTrack Ta2 50 A 
+PrintTracks A  
+PushFrontTrack Tb1 20 B  
+PushBackTrack Tb2 40 B  
+InsertTrack Tb3 60 B 2  
+PrintTracks B  
+PushFrontTrack Tc1 25 C  
+PushBackTrack Tc2 35 C  
+InsertTrack Tc3 15 C 3  
+PrintTracks C  
+PushBackTrack Td2 45 D  
+PushFrontTrack Td1 5 D  
+InsertTrack Td3 55 D 2  
+PrintTracks D  
+PushFrontTrack Te1 22 E  
+PushBackTrack Te2 32 E  
+InsertTrack Te3 12 E 1  
+PrintTracks E  
+PopTrack A  
+RemoveLastTrack B  
+RemoveAtTrack C 2  
+PrintTracks A  
+PrintTracks B  
+PrintTracks C  
+ReverseTracks D  
+PrintTracks D  
+ReverseTracks E  
+PrintTracks E  
+PopAlbum  
+PrintAlbums  
+RemoveLastAlbum  
+PrintAlbums  
+RemoveAlbumAt 2  
+PrintAlbums  
+ReverseAlbums  
+PrintAlbums  
+Play  
+Next  
+Play  
+Next  
+Play  
+Next  
+Play  
+PushBackAlbum F  
+PushBackAlbum X  
+PushBackAlbum Y  
+PrintAlbums  
+PushFrontTrack Tf1 100 F  
+PushBackTrack Tf2 90 F  
+PrintTracks F  
+PushFrontTrack T1 5 X  
+PushBackTrack T2 75 X  
+InsertTrack T3 15 X 2  
+PrintTracks X  
+ReverseTracks X  
+PrintTracks X  
+PushFrontTrack Ty1 65 Y  
+PushBackTrack Ty2 35 Y  
+InsertTrack Ty3 75 Y 2  
+PrintTracks Y  
+END 

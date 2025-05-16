@@ -1,0 +1,13 @@
+PushBackAlbum A
+PushBackAlbum B
+PushBackAlbum C
+PrintAlbums
+ReverseAlbums
+PrintAlbums
+PushBackTrack t1 1 B
+PushBackTrack t2 2 B
+PushBackTrack t3 3 B
+PrintTracks B
+ReverseTracks B
+PrintTracks B
+END

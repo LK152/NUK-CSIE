@@ -1,0 +1,17 @@
+PushBackAlbum X
+PushBackAlbum Y
+PushBackAlbum Z
+PrintAlbums
+PopAlbum
+PrintAlbums
+RemoveLastAlbum
+PrintAlbums
+PushFrontTrack t1 5 Y
+PushBackTrack t2 10 Y
+PushFrontTrack t0 15 Y
+PrintTracks Y
+PopTrack Y
+PrintTracks Y
+RemoveLastTrack Y
+PrintTracks Y
+END

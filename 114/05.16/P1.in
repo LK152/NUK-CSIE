@@ -1,0 +1,10 @@
+InsertAlbum D 1
+PushBackAlbum A
+PushBackAlbum B
+InsertAlbum C 2
+PrintAlbums
+PushFrontTrack T1 10 A
+PushBackTrack T2 20 A
+InsertTrack T3 15 A 2
+PrintTracks A
+END

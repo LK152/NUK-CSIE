@@ -1,0 +1,34 @@
+D A E B C
+Ta1 Ta3 Ta2
+Tb1 Tb3 Tb2
+Tc1 Tc2 Tc3
+Td1 Td3 Td2
+Te3 Te1 Te2
+Ta3 Ta2
+Tb1 Tb3
+Tc1 Tc3
+Td2 Td3 Td1
+Te2 Te1 Te3
+A E B C
+A E B
+A B
+B A
+Tb1
+Tb3
+Ta3
+Ta2
+A F X Y
+Tf1 Tf2
+T1 T3 T2
+T2 T3 T1
+Ty1 Ty3 Ty2
+
+Tf1 100
+Tf2 90
+T2 75
+Ty3 75
+Ty1 65
+Ta2 50
+Ty2 35
+T3 15
+T1 5
