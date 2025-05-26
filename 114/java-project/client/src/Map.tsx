@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import data from './spots.json';
 import { isMobile } from 'react-device-detect';
+import Routing from './components/Routing';
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -39,13 +40,18 @@ const Map = () => {
 					return (
 						<Marker position={[x, y]}>
 							<Popup>
-								<h1 style={{margin: 0}}>{name}</h1>
+								<h1 style={{ margin: 0 }}>{name}</h1>
 								<br />
 								<h3>{description}</h3>
 							</Popup>
 						</Marker>
 					);
 				})}
+                <Routing />
+				{/* <Routing
+					from={[data[0].x, data[0].y]}
+					to={[data[3].x, data[3].y]}
+				/> */}
 			</MapContainer>
 		</div>
 	);
