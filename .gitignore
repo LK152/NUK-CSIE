@@ -21,3 +21,6 @@
 !*.in
 !*.out
 !*.pdf
+!*.tsx
+!*.jsx
+!*.json
