@@ -1,0 +1,31 @@
+'a': 111
+'c': 00
+'d': 1101
+'g': 1100
+'o': 100
+'r': 101
+'t': 01
+Autocomplete 'c':
+cat
+car
+cart
+Fuzzy 'c':
+cat
+car
+cart
+Autocomplete 'ca':
+cat
+car
+cart
+Fuzzy 'ca':
+cat
+car
+cart
+Autocomplete 'do':
+dot
+dog
+Fuzzy 'do':
+dot
+dog
+Autocomplete 'bat':
+Fuzzy 'bat':

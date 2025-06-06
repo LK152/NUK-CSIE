@@ -1,0 +1,13 @@
+6
+apple
+apply
+ape
+bat
+bath
+batch
+5
+ae
+app
+bat
+batt
+cat

@@ -1,0 +1,11 @@
+5
+cat
+car
+cart
+dog
+dot
+4
+c
+ca
+do
+bat

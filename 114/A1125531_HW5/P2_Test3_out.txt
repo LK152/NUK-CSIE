@@ -1,0 +1,42 @@
+'a': 1101
+'e': 01100
+'m': 0111
+'n': 111
+'o': 100
+'r': 010
+'s': 00
+'t': 101
+'u': 1100
+'y': 01101
+Autocomplete 's':
+star
+stare
+start
+sun
+sunny
+Fuzzy 's':
+star
+stare
+start
+sun
+sunny
+Autocomplete 'st':
+star
+stare
+start
+Fuzzy 'st':
+star
+stare
+start
+Autocomplete 'star':
+star
+stare
+start
+Fuzzy 'star':
+star
+stare
+start
+Autocomplete 'stars':
+Fuzzy 'stars':
+Autocomplete 'state':
+Fuzzy 'state':

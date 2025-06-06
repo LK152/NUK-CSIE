@@ -1,0 +1,29 @@
+'a': 10
+'b': 010
+'c': 11000
+'e': 1101
+'h': 1110
+'l': 1111
+'p': 00
+'t': 011
+'y': 11001
+Autocomplete 'ae':
+Fuzzy 'ae':
+Autocomplete 'app':
+apply
+apple
+Fuzzy 'app':
+apply
+apple
+Autocomplete 'bat':
+bat
+batch
+bath
+Fuzzy 'bat':
+bat
+batch
+bath
+Autocomplete 'batt':
+Fuzzy 'batt':
+Autocomplete 'cat':
+Fuzzy 'cat':
